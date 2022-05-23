@@ -1,0 +1,42 @@
+.info {
+    padding: 0 60px;
+}
+
+.info__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.title__styles {
+    font-weight: 500;
+    font-size: 35px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    margin: 0;
+}
+
+.user__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.number {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 35px;
+}
+
+.number span {
+    color: #E0E0E0;
+}
+
+.renderButton {
+
+
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #101010;
+    border: 1px solid #0D1E4B;
+}

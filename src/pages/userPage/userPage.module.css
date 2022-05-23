@@ -1,0 +1,129 @@
+.userPage {
+    padding-top: 100px;
+
+}
+
+table.iksweb {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    height: auto;
+    font-family: 'Open Sans';
+    font-style: normal;
+
+    font-size: 18px;
+}
+
+table.iksweb,
+table.iksweb td,
+table.iksweb th {
+    border: 1px solid #595959;
+}
+
+
+table.iksweb th {
+    background: #347c99;
+    color: #fff;
+    font-weight: normal;
+}
+
+.empty {
+    padding: 0 25px;
+}
+
+.space {
+    padding-top: 25px;
+}
+
+.userName {
+    font-family: 'Alegreya Sans SC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    text-align-last: left;
+    margin-left: 13px;
+}
+
+.user_btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    height: 45px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 11px;
+    width: 100%;
+    font-family: inherit;
+    border: 1px solid #0D1E4B;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+
+
+}
+
+.iksweb {
+    text-align: center;
+}
+
+.posts {
+    border: 1px solid #000;
+    border-top: none;
+    padding: 15px 50px 30px;
+}
+
+.posts_title {
+    font-family: 'Alegreya Sans SC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+}
+
+.post {
+    border: 1px solid #000;
+    padding: 15px 35px;
+    margin-top: 15px;
+    cursor: pointer;
+
+}
+
+.post:hover {
+    box-shadow: 0px 0px 19px 0px rgba(34, 60, 80, 0.2);
+
+}
+
+.public {
+    padding: 25px 50px 40px;
+    border: 1px solid #000;
+    border-top: none;
+}
+
+.publications {
+    display: flex;
+}
+
+.public_box {
+    width: 154px;
+    height: 154px;
+    background-color: #63B4EE;
+    border: 1px solid #000;
+}
+
+.title {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 17px;
+    text-transform: capitalize;
+
+    color: #000000;
+}
+
+.text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.41);
+}

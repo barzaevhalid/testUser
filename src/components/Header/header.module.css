@@ -1,0 +1,18 @@
+.header {
+    position: relative;
+}
+
+.header__inner {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background-color: #101010;
+
+}
+
+.logo {
+    cursor: pointer;
+}
