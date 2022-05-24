@@ -39,7 +39,7 @@ const PostInfo = () => {
             setUserEmail('')
             setUserText('')
             dispatch(postFetch(formData))
-            alert('Комментрай отправлен')
+            alert('Комментарий отправлен')
         }
     }
 

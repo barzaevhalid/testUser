@@ -7,6 +7,7 @@ import { getUsers } from '../../redux/asyncActions/action';
 import { useDispatch, useSelector } from 'react-redux';
 
 import s from './info.module.css'
+import Spinner from '../spinner/Spinner';
 const Info = () => {
 
     const [renderUser, setRenderUser] = useState(false)
@@ -17,6 +18,7 @@ const Info = () => {
     }, [])
 
     const users = useSelector(state => state.users)
+    const loading = useSelector(state => state.loading)
     const renderUsers = users.map((user, i) => {
         if (i < 4 && renderUser === false) {
             return <User key={user.id} user={user} />
@@ -26,7 +28,9 @@ const Info = () => {
             return <User key={user.id} user={user} />
         }
     })
-
+    if (loading) {
+        return <Spinner />
+    }
     return (
         <div className={s.info}>
             <div className={s.info__top}>
@@ -39,10 +43,11 @@ const Info = () => {
                 {renderUsers}
             </div>
             <button className={s.renderButton} onClick={() => setRenderUser(!renderUser)}>{!renderUser ? 'Показать всех' : 'Скрыть'}</button>
-
             <SiteInformation />
         </div>
     );
 };
+const Viev = () => {
 
+}
 export default Info;
