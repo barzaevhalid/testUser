@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { getUserById, getPosts } from '../../redux/asyncActions/action';
-
+import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 
@@ -18,25 +18,24 @@ const UserPage = () => {
 
     const user = useSelector(state => state.user)
     const userPosts = useSelector(state => state.posts)
-    console.log(userPosts);
 
     const [renderPost, setRenderPost] = useState(false)
 
     const renderPosts = userPosts.map((item, i) => {
         if (i < 3 && !renderPost) {
             return (
-                <div className={s.post}>
+                <Link to={`post/${item.id}`} className={s.post}>
                     <h3 className={s.title}>{item.title}</h3>
                     <div className={s.text}>{item.body}...</div>
-                </div>
+                </Link>
             )
         }
         if (renderPost) {
             return (
-                <div className={s.post}>
+                <Link to={`post/${item.id}`} className={s.post}>
                     <h3 className={s.title}>{item.title}</h3>
                     <div className={s.text}>{item.body}...</div>
-                </div>
+                </Link>
             )
         }
     })

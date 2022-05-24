@@ -1,0 +1,58 @@
+.wrapper {
+    padding-top: 100px;
+}
+
+.inner {
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+.comments {
+    margin-top: 10px;
+}
+
+.comment {
+
+    border: 1px solid #000;
+}
+
+.comments_inner {
+    border: 1px solid #000;
+    padding: 10px;
+
+}
+
+ul li {
+    margin-top: 10px;
+}
+
+ul li a {
+    border-bottom: 1px solid black;
+}
+
+.three_item {
+    margin-bottom: 15px;
+    border: 1px solid lightgray;
+    padding: 5px;
+}
+
+.formOpenedBtn {
+    margin: 15px 0;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+form input {
+    width: 400px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+form textarea {
+    margin-top: 10px;
+    width: 400px;
+}

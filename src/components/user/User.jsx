@@ -8,7 +8,7 @@ const User = ({ user }) => {
         <div className={s.user}>
             <div className={s.userName}>{user.name}</div>
             <div className={s.city}>{user.address.city}</div>
-            <Link to={`user-page/${user.id}`} className={s.user_link}>Смотреть профиль</Link>
+            <Link to={`user/${user.id}`} className={s.user_link}>Смотреть профиль</Link>
         </div >
     );
 };

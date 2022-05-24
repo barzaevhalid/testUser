@@ -4,6 +4,7 @@ import Layout from './components/layout/Layout';
 import UserPage from './pages/userPage/UserPage'
 
 import s from './app.module.css'
+import PostInfo from './pages/PostInfo/PostInfo';
 
 const App = () => {
   return (
@@ -11,7 +12,8 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Layout/>}>
         <Route index element={<Main/>}/>
-        <Route path='user-page/:id' element={<UserPage/>}/>
+        <Route path='user/:id' element={<UserPage/>}/>
+        <Route path='user/:userId/post/:id' element={<PostInfo/>}/>
         </Route>
       </Routes>
     </div>

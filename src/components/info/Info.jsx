@@ -38,7 +38,7 @@ const Info = () => {
             <div className={s.user__wrapper}>
                 {renderUsers}
             </div>
-            <button className={s.renderButton} onClick={() => setRenderUser(!renderUser)}>{!renderUser ? 'Показать всех' : 'Скрыть всех'}</button>
+            <button className={s.renderButton} onClick={() => setRenderUser(!renderUser)}>{!renderUser ? 'Показать всех' : 'Скрыть'}</button>
 
             <SiteInformation />
         </div>
